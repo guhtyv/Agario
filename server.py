@@ -29,7 +29,7 @@ def handl_data():
                         player_data[conn] = players[conn]
             except:
                 continue
-Thread(target=handl_data, deamon=True).start()
+Thread(target=handl_data, daemon=True).start()
 print("SERVER running...")
 
 while True:
